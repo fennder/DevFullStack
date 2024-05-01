@@ -108,4 +108,145 @@ public class Unidade4 {
 			}
 		}
 	}
+
+  public void fibonnacci() {
+    // TODO Auto-generated method stub
+    float s, s1, s2, s9, s10, s100, s10000, i;
+
+    s1 = 1;
+    s2 = 1;
+    for(i=3;i<=10000;i++){
+        s =s1+s2;
+        s1 = s2;
+        s2 = s;
+   
+        if(i == 9) {
+          s9 = s;
+          
+        }else if(i == 10) {
+          s10 = s;
+          System.out.println(s10);
+        }else if(i == 100) {
+          s100 = s;
+          System.out.println(s100);
+        }else if(i == 10000) {
+          s10000 = s;
+          System.out.println(s10000);
+        }else {
+          numero = numero + 3;
+          System.out.println(numero);
+        }
+    }
+  }
+
+  public void calculeE() {
+    
+    double x, e = 0;
+    int i;
+
+    System.err.println("Favor infrmar o valor de X: ");
+    x = read.nextInt();
+
+    for(i = 0; i <= 50; i++){
+      e = e + Math.pow(x, i)/i;
+      System.out.println("O valor de E^ " + " = " + e);
+    }
+  }
+
+  public void enquantoMedia() {
+    
+    int valor;
+    String nome, endereco, telefone;
+    int matricula, cont;
+
+    System.out.println("Informe o valor: ");
+    valor = read.nextInt();
+    
+    float soma_valor = 0;
+    cont = 0;
+    
+
+    while (valor != -1) {
+      soma_valor = soma_valor + 1;
+      cont++;
+
+      System.out.println("Informe o valor: ");
+      valor = read.nextInt();
+    }
+    System.out.println("Média é gual: " + soma_valor/cont);
+
+    System.out.println("Pr favor, digite a matrícula: ");
+    matricula = read.nextInt();
+    
+    //Ler aluno
+    while (matricula != 0) {
+      soma_valor = soma_valor + 1;
+      cont++;
+
+      System.out.println("Informe o Nome: ");
+      nome = read.next();
+      System.out.println("Informe o Endereço: ");
+      endereco = read.next();
+      System.out.println("Informe o Telefone: ");
+      telefone = read.next();
+      cont++;
+
+      System.out.println("Pr favor, digite a matrícula: ");
+      matricula = read.nextInt();
+    }
+  }
+
+  public void fatorial() {
+    double fatorial = 1;
+    int numero, i;
+
+    System.out.println("Informe o número: ");
+    numero = read.nextInt();
+
+    i = numero;
+    while (i > 1) {
+      fatorial = fatorial * numero;
+      i--;
+    }
+    System.out.println("O fatorial do número: " + numero + " = " + fatorial);
+
+  }
+
+  public void impostoRenda() {
+
+    String nome, cpf;
+    int numeroDependentes, i=0;
+    double redimentoMensal, salarioLiquido, irpf;
+
+    while (i < 10) {
+      System.out.println("Digite o nome: ");
+      nome = read.next();
+      System.out.println("Digite o CPF: ");
+      cpf = read.next();
+      System.out.println("Digite o número de dependentes: ");
+      numeroDependentes = read.nextInt();
+      System.out.println("Digite a Renda MEnsal: ");
+      redimentoMensal = read.nextDouble();
+
+      salarioLiquido = redimentoMensal - (numeroDependentes * 189.59) - 0.11 * redimentoMensal;
+      System.out.println(salarioLiquido);
+      if (salarioLiquido <= 1903.98) {
+        irpf = 0;
+        System.out.println("Contribuinte " + nome + " é isento!");
+      }else if ((salarioLiquido >= 1903.99) && (salarioLiquido <= 2826.65)) {
+        irpf = 0.075 * salarioLiquido - 142.80;
+        System.out.println("O IRPF do contribuinte " + nome + " é " + irpf);
+      }else if ((salarioLiquido >= 2826.66) && (salarioLiquido <= 3751.05)) {
+        irpf = 0.15 * salarioLiquido - 354.80;
+        System.out.println("O IRPF do contribuinte " + nome + " é " + irpf);
+      }else if ((salarioLiquido >= 3751.06) && (salarioLiquido <= 4664.68)) {
+        irpf = 0.225 * salarioLiquido - 636.13;
+        System.out.println("O IRPF do contribuinte " + nome + " é " + irpf);        
+      }else if ((salarioLiquido >= 4664.69)) {
+        irpf = 0.275 * salarioLiquido - 869.36;
+        System.out.println("O IRPF do contribuinte " + nome + " é " + irpf);
+      }
+      i++;
+    }
+  }
 }
