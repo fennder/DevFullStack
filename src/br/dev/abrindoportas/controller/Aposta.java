@@ -9,7 +9,7 @@ public class Aposta {
     Scanner read = new Scanner(System.in);
 
   public void lotoFacil(){
-    int qnum;
+    int qnum, volante;
 
     System.out.println("Digite a quantidade de números: ");
     qnum = read.nextInt();

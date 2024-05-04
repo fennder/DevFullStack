@@ -1,35 +1,33 @@
-package br.dev.abrindoportas;
+package br.tec.abrindoportas;
+
+import java.io.IOException;
 
 import br.dev.abrindoportas.controller.Aposta;
 import br.dev.abrindoportas.controller.Unidade2;
 import br.dev.abrindoportas.controller.Unidade3;
 import br.dev.abrindoportas.controller.Unidade4;
+import br.dev.abrindoportas.controller.Unidade5;
+
 
 public class Principal {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Aposta aposta = new Aposta();
-		Unidade2 uni2 = new Unidade2();
-		Unidade3 uni3 = new Unidade3();
-		Unidade4 uni4 = new Unidade4();
-		
+		// Unidade2 uni2 = new Unidade2();
+		// Unidade3 uni3 = new Unidade3();
+		// Unidade4 uni4 = new Unidade4();
+		// Unidade5 uni5 =15 new Unidade5();
+	
 
-		// aposta.lotoFacil();
+		aposta.lotoFacil();
 //		uni2.exercicio21();
 //		uni2.exercicio22();
-//		System.out.println();
 //		uni2.operadoresMatematicos();
-//		System.out.println();
 //		uni2.fruta();
-//		System.out.println();
 //		uni2.algo2();
-//		System.out.println();
 //		uni2.alg3();
-//		System.out.println();
 //		uni2.slide129();9
-//		System.out.println();
 //		uni2.slide129CalcHoras();
-//		System.out.println();
 //		uni2.slide129Entorno();
 //		uni2.slide129Pizza();
 //		uni2.slide129Desconto();
@@ -57,7 +55,12 @@ public class Principal {
 		// uni4.calculeE();
 		// uni4.enquantoMedia();
 		// uni4.fatorial();
-		uni4.impostoRenda();
+		// uni4.impostoRenda();
+		// uni5.vetor();
+		// uni5.matriz();
+		// uni5.calculaVetor();
+		// uni5.writeFile();
+		// uni5.matrizIdentidade();
 		
 	}
 	
