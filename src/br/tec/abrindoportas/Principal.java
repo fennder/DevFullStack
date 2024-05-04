@@ -19,7 +19,7 @@ public class Principal {
 		// Unidade5 uni5 =15 new Unidade5();
 	
 
-		aposta.lotoFacil();
+		// aposta.lotoFacil();
 //		uni2.exercicio21();
 //		uni2.exercicio22();
 //		uni2.operadoresMatematicos();
